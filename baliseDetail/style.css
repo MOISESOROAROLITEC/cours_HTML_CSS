@@ -1,31 +1,32 @@
-.details{
-	background: whitesmoke;
-	border: solid black 2px;
-	width: 70%;
-	margin: 50px auto;
-	padding: 10px;
-	border-radius: 10px;
+.details {
+  background: whitesmoke;
+  border: solid black 2px;
+  width: 70%;
+  margin: 50px auto;
+  padding: 10px;
+  border-radius: 10px;
 }
-.summary{
-	text-decoration: none;
-	text-align: center;
-	list-style: none;
-	cursor: pointer;
-	padding: 10px;
-	border-radius: 10px;
+.summary {
+  text-decoration: none;
+  text-align: center;
+list-style: none;
+cursor: pointer;
+padding: 10px;
+border-radius: 10px;
 }
-.summary:hover{
-	background: rgb(207, 206, 206);
+.summary:hover {
+  background: rgb(207, 206, 206);
 }
 .separated{
-	margin: 10px;
+margin: 10px;
 }
-.detailContent{
-	padding-top: 10px;
-	font-size: large;
-	height: 150px;
-	overflow-x: hidden;
-	overflow-y: visible;
-	scrollbar-color: rebeccapurple green;
-	scrollbar-width: thin;
+
+.detailContent {
+  padding-top: 10px;
+font-size: large;
+height: 150px;
+overflow-x: hidden;
+overflow-y: visible;
+scrollbar-color: rebeccapurple green;
+scrollbar-width: thin;
 }

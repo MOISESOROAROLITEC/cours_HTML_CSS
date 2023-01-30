@@ -1,0 +1,16 @@
+.tableForm {
+	width: 70%;
+	margin: 0 auto;
+	border: solid 1px royalblue;
+	border-radius: 5px;
+}
+
+.tableForm td {
+	/* border: solid 1px royalblue; */
+	padding: 10px 0px;
+}
+
+.tableForm input[type='color'] {
+	width: 100%;
+	height: 80px;
+}

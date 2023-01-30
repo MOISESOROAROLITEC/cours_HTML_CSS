@@ -26,4 +26,6 @@
 	height: 150px;
 	overflow-x: hidden;
 	overflow-y: visible;
+	scrollbar-color: rebeccapurple green;
+	scrollbar-width: thin;
 }

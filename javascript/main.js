@@ -36,4 +36,5 @@ const voiture = new Voiture("mercedes", "rouge", 500000);
 console.log(voiture);
 const bus = new Bus("volvagen", "black", 6000, 500);
 console.log(bus.getNbrPlace)
-// console.log(bus);
+bus.setNbrPlace = 100
+console.log(bus.getNbrPlace)

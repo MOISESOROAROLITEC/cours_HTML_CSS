@@ -11,12 +11,12 @@ console.dir(pad)
 var listKey = ""
 function clickButton(event) {
 	inputVal = input.value
-	console.log(event.target)
-	if(event.target.innerText === "AC"){
+	console.log(event.target.innerText)
+	if(event.target.innerText === ""){
 		input.value = input.value.slice(0, input.value.length - 1)
 		return
 	}
-		if(event.target.innerText === "C"){
+	if(event.target.innerText === "effacer"){
 		input.value = ""
 		return
 	}

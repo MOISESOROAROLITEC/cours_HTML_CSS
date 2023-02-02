@@ -1,0 +1,28 @@
+.imgBox {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.tab {
+	display: flex;
+	width: 100%;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	/* background: #0000ff59; */
+	color: white;
+	font-weight: bold;
+	font-size: 1.1rem;
+	justify-content: center;
+	padding: 0px 5px;
+}
+
+.next,
+.back {
+	width: 100px;
+	height: 100%;
+}

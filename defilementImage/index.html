@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./index.css">
+	<link href="htt	ps://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<title>defilementImage</title>
+</head>
+
+<body>
+	<div class="tab">
+		<div class="nav">
+			<button type="button" class="btn btn-primary back">précédent</button>
+		</div>
+		<div class="imgBox">
+			<img class="img" src="../images/images 0.jpeg" alt="image0">
+		</div>
+		<div class="nav">
+			<button type="button" class="btn btn-primary next">suivant</button>
+		</div>
+	</div>
+	<script>
+		var position = 0;
+		// var imgList = ["images"]
+		var img = document.querySelector(".img");
+		var back = document.querySelector(".back");
+		var next = document.querySelector(".next");
+
+		next.addEventListener("click", handleNext)
+		back.addEventListener("click", () => handleBack())
+
+		function handleNext() {
+			// console.log("nest est fait");
+			if (position == 4) {
+				position = 0
+			} else {
+				position++
+			}
+			img.src = `../images/images ${position}.jpeg`
+		}
+		function handleBack() {
+			// console.log("handleBack est fait");
+			if (position == 0) {
+				position = 4
+			} else {
+				position--
+			}
+			img.src = `../images/images ${position}.jpeg`
+		}
+
+		// console.log("l'image est : ", img, back, next)
+	</script>
+</body>
+
+</html>

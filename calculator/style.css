@@ -1,0 +1,77 @@
+body {
+	padding: 0;
+	margin: 0;
+
+	display: flex;
+	justify-content: center;
+}
+
+.calcBox {
+	position: relative;
+	top: 10vh;
+	width: 60%;
+	min-width: 150px;
+	max-width: 800px;
+	margin: 0 auto;
+	background: whitesmoke;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.inputBox input {
+	width: 95%;
+	height: 100px;
+	font-size: 2rem;
+	text-align: end;
+	background: none;
+	border: none;
+	font-family: ubuntu;
+}
+
+.inputBox input:focus-visible {
+	border: none;
+	outline: none;
+}
+
+.inputBox {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+hr {
+	height: 1px;
+	width: 100%;
+	border: none;
+	background: #00000020;
+}
+
+.line {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 35px 0;
+	width: 100%;
+}
+
+.line button {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
+	font-size: 1.4rem;
+	font-family: ubuntu;
+}
+
+.line button:hover {
+	background: #d5d5d5bb;
+}
+
+.line button:active {
+	background: #d5d5d5;
+}
+
+.line .full {
+	width: 120px;
+	border-radius: 60px;
+}

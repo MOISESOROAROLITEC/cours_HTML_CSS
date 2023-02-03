@@ -1,10 +1,12 @@
 "use strict"
 
 class Voiture {
+	static nbr = 0;
 	constructor(marque, couleur, prix) {
 		this.marque = marque;
 		this.couleur = couleur;
 		this.prix = prix;
+		Voiture.nbr += 1;
 	}
 	get getPrix() {
 		return this.prix;
@@ -17,6 +19,9 @@ class Voiture {
 	}
 	set setMarque(marque) {
 		this.marque = marque;
+	}
+	static getNbrVoiture() {
+		return this.nbr;
 	}
 
 }
@@ -38,3 +43,4 @@ const bus = new Bus("volvagen", "black", 6000, 500);
 console.log(bus.getNbrPlace)
 bus.setNbrPlace = 100
 console.log(bus.getNbrPlace)
+console.log("Le nombre de voiture cree est : ", Voiture.getNbrVoiture());

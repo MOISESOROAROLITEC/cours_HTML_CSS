@@ -1,46 +1,22 @@
 "use strict"
 
-class Voiture {
-	static nbr = 0;
-	constructor(marque, couleur, prix) {
-		this.marque = marque;
-		this.couleur = couleur;
-		this.prix = prix;
-		Voiture.nbr += 1;
-	}
-	get getPrix() {
-		return this.prix;
-	}
-	set setPrix(nprix) {
-		this.prix = nprix;
-	}
-	get getMarque() {
-		return "La marque de la voiture est : " + this.marque;
-	}
-	set setMarque(marque) {
-		this.marque = marque;
-	}
-	static getNbrVoiture() {
-		return this.nbr;
-	}
+let soro = new Boulanger("SORO COLOTCHOLOMAN");
+let pain_au_lait = new Produit("Pain au lait");
+let pain_au_cocolat = new Produit("Pain au cocolat");
+let pain_au_sucre = new Produit("Pain au sucré");
 
-}
-class Bus extends Voiture {
-	constructor(marque, couleur, prix, nbrPlace) {
-		super(marque, couleur, prix);
-		this.nbrPlace = nbrPlace;
-	}
-	get getNbrPlace() {
-		return "Le nombre de place est : " + this.nbrPlace;
-	}
-	set setNbrPlace(nbr) {
-		this.nbrPlace = nbr;
-	}
-}
-const voiture = new Voiture("mercedes", "rouge", 500000);
-console.log(voiture);
-const bus = new Bus("volvagen", "black", 6000, 500);
-console.log(bus.getNbrPlace)
-bus.setNbrPlace = 100
-console.log(bus.getNbrPlace)
-console.log("Le nombre de voiture cree est : ", Voiture.getNbrVoiture());
+soro.fabrique(pain_au_cocolat, 50);
+soro.fabrique(pain_au_lait, 10);
+soro.fabrique(pain_au_sucre, 30);
+[1, 5, 8, 50, 9].forEach(function (e) { e }, this)
+// console.log(soro.fabrication); 
+soro.bilan()
+// setTimeout(() => {
+// 	console.log("Retardée d'une seconde.");
+// }, 3000)
+// function toto() {
+// 	console.log('toto a été appelée');
+
+// }
+// setTimeout(toto, 0);
+// console.log('Après setTimeout()');

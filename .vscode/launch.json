@@ -8,7 +8,7 @@
 			"type": "chrome",
 			"request": "launch",
 			"name": "Lancer index.html",
-			"file": "${workspaceFolder}/javascript/index.html",
+			"file": "${workspaceFolder}/ecouteur_evenement/index.html",
 		}
 	]
 }

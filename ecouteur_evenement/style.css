@@ -1,0 +1,46 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.bigbox {
+	padding: 10px;
+	margin: 50px auto;
+	background: #0000ff38;
+	width: 500px;
+	height: 400px;
+	border-radius: 15px;
+	/* display: flex; */
+	justify-content: center;
+	align-items: center;
+}
+
+.mediumbox {
+	width: 80%;
+	height: 80%;
+	margin: 0 auto;
+	background: #0000ff38;
+	border-radius: 15px;
+	/* display: flex; */
+	justify-content: center;
+	align-items: center;
+}
+
+.smallbox {
+	margin: 0 auto;
+	width: 80%;
+	height: 80%;
+	background: #0000ff38;
+	border-radius: 15px;
+}
+
+.refInput::before {
+	font-size: 1.3rem;
+	color: blue;
+	font-weight: bold;
+	background: red;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	/* content: "Je suis le texte ajouté"; */
+}

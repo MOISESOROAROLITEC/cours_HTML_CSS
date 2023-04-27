@@ -1,10 +1,11 @@
-.details {
+details {
   background: whitesmoke;
   border: solid black 2px;
   width: 70%;
   margin: 50px auto;
   padding: 10px;
   border-radius: 10px;
+	transition: 1s
 }
 .summary {
   text-decoration: none;
@@ -12,10 +13,15 @@
 	list-style: none;
 	cursor: pointer;
 	padding: 10px;
-	border-radius: 10px;
+	transition: 1s
 }
 .summary:hover {
   background: rgb(207, 206, 206);
+  color: red;
+  font-weight: bold;
+  letter-spacing: 4px;
+  font-size: 2rem;
+  border-radius: 20px
 }
 .separated{
 	margin: 10px;
@@ -29,4 +35,5 @@
 	overflow-y: visible;
 	scrollbar-color: rebeccapurple green;
 	scrollbar-width: thin;
+	transition: 1s
 }
